@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Bet on a Progress Bar!</title>
+    <link rel="stylesheet" href="global.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1 id="title">Bet on a Progress Bar!</h1>
+
+<button id="startBtn">Start Race</button>
+
+<div id="raceTrack">
+    <progress id="racer1" value="1" max="100"></progress>
+    <progress id="racer2" value="1" max="100"></progress>
+    <progress id="racer3" value="1" max="100"></progress>
+    <progress id="racer4" value="1" max="100"></progress>
+    <progress id="racer5" value="1" max="100"></progress>
+</div>
+
+<div id="racerStats">
+    <table id="racerStatsTable">
+        <caption>List of racer stats: </caption>
+        <tr>
+            <th>Racer</th>
+            <th>Speed</th>
+            <th>Endurance</th>
+            <th>Luck</th>
+        </tr>
+        <tr>
+            <th>Racer 1</th>
+            <th id="racer1Speed">PH</th>
+            <th id="racer1Endurance">PH</th>
+            <th id="racer1Luck">PH</th>
+        </tr>
+        <tr>
+            <th>Racer 2</th>
+            <th id="racer2Speed">PH</th>
+            <th id="racer2Endurance">PH</th>
+            <th id="racer2Luck">PH</th>
+        </tr>
+        <tr>
+            <th>Racer 3</th>
+            <th id="racer3Speed">PH</th>
+            <th id="racer3Endurance">PH</th>
+            <th id="racer3Luck">PH</th>
+        </tr>
+        <tr>
+            <th>Racer 4</th>
+            <th id="racer4Speed">PH</th>
+            <th id="racer4Endurance">PH</th>
+            <th id="racer4Luck">PH</th>
+        </tr>
+        <tr>
+            <th>Racer 5</th>
+            <th id="racer5Speed">PH</th>
+            <th id="racer5Endurance">PH</th>
+            <th id="racer5Luck">PH</th>
+        </tr>
+    </table>
+
+    <a id="statsCloseLink" href="#">Close Stats</a>
+</div>
+
+<div id="controls">
+    <label for="racerSelect">Choose your racer: </label>
+    <select id="racerSelect">
+        <option value="racer1">Racer 1</option>
+        <option value="racer2">Racer 2</option>
+        <option value="racer3">Racer 3</option>
+        <option value="racer4">Racer 4</option>
+        <option value="racer5">Racer 5</option>
+    </select>
+    <a id="statsOpenLink" href="#">View Stats</a><br />
+
+    <a id="tutLink" href="#">How to play</a>
+</div>
+
+<script src="scripts.js"></script></body>
+</html>
